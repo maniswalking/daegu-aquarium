@@ -1,52 +1,49 @@
-/* font-family - Korean */
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 900;
-  src: url(../fonts/pretendard/Pretendard-Black.woff) format('woff');
+/* common */
+body {
+  font-family: "pretendard", sans-serif;
+  letter-spacing: -0.04rem;
 }
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 800;
-  src: url(../fonts/pretendard/Pretendard-ExtraBold.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  src: url(../fonts/pretendard/Pretendard-Bold.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 600;
-  src: url(../fonts/pretendard/Pretendard-SemiBold.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 500;
-  src: url(../fonts/pretendard/Pretendard-Medium.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  src: url(../fonts/pretendard/Pretendard-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  src: url(../fonts/pretendard/Pretendard-Light.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 200;
-  src: url(../fonts/pretendard/Pretendard-ExtraLight.woff) format('woff');
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 100;
-  src: url(../fonts/pretendard/Pretendard-Thin.woff) format('woff');
-}
-
-/* font-family - English */
-
-
 
 /* root */
+:root {
+  /* color styles */
+
+  /* blue */
+  --color-blue50: #e5f1fa;
+  --color-blue100: #c8e6fc;
+  --color-blue200: #acd6f9;
+  --color-blue300: #90c5f7;
+  --color-blue400: #5b9ff6;
+  --color-blue500: #4288f8;
+  --color-blue600: #2e82ff;
+  --color-blue700: #2957e3;
+  --color-blue800: #0b36bb;
+  --color-blue900: #01279b;
+  --color-blue950: #011141;
+
+  /* yellow */
+  --color-yellow50: #fbe9a7;
+  --color-yellow100: #f7dc77;
+  --color-yellow200: #f4ce46;
+  --color-yellow300: #f0be04;
+  --color-yellow400: #eaae00;
+  --color-yellow500: #e29e00;
+  --color-yellow600: #da8e00;
+  --color-yellow700: #cf7e00;
+  --color-yellow800: #c36e00;
+  --color-yellow900: #b65f00;
+  --color-yellow950: #a84f00;
+
+  /* grey-scale */
+  --color-gray50: #f2f2f3;
+  --color-gray100: #e4e6e7;
+  --color-gray200: #c9cccf;
+  --color-gray300: #aeb3b7;
+  --color-gray400: #94999e;
+  --color-gray500: #737980;
+  --color-gray600: #61666b;
+  --color-gray700: #484d51;
+  --color-gray800: #303336;
+  --color-gray900: #181a1b;
+  --color-gray950: #0c0d0d;
+}
