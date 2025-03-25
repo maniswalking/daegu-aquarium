@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style-main.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eafcf9ecf2.js" crossorigin="anonymous"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -19,52 +23,119 @@
             <img src="./assets/images/logo.svg" alt="대구아쿠아리움 로고">
           </a>
         </h1>
-        <nav class="gnb">
-          <ul class="menu-wrap">
-            <li class="menu-depth-1"><a href="#">대구아쿠아리움</a></li>
-            <li class="menu-depth-1"><a href="#">아쿠아리움 이야기</a></li>
-            <li class="menu-depth-1"><a href="#">공연·체험</a></li>
-            <li class="menu-depth-1"><a href="#">아쿠아리움 입장권</a></li>
-          </ul>
-          <button type="button" class="cta">
-            <a href="#">티켓예매하기</a>
-          </button>
-        </nav>
-        <div class="ham-menu">
-          <span class="menu-bar"></span>
-          <span class="menu-bar"></span>
-          <span class="menu-bar"></span>
+        <div class="nav-wrap">
+          <nav class="gnb">
+            <ul class="menu-wrap">
+              <li class="menu-depth-1"><a href="#">대구아쿠아리움</a></li>
+              <li class="menu-depth-1"><a href="#">아쿠아리움 이야기</a></li>
+              <li class="menu-depth-1"><a href="#">공연·체험</a></li>
+              <li class="menu-depth-1"><a href="#">아쿠아리움 입장권</a></li>
+            </ul>
+            <button type="button" class="cta">
+              <a href="#">티켓예매하기</a>
+            </button>
+          </nav>
+          <div class="ham-menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </div>
         </div>
+        
       </div>
     </header>
     <!-- //header -->
 
     <!-- main visual -->
-    <section class="main-visual">
-      <div class="swiper">
+    <section class="section01">
+      <div class="swiper main-visual">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
+          <div class="swiper-slide visual-content">
+            <div class="slide-text-wrap">
+              <h2>대구아쿠아리움</h2>
+              <p>매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해 특별한 경험과 잊지 못할 감동을 선사합니다. 판타스틱하고 환상적인 체험들을 선사하는 펀(Fun)한 대구아쿠아리움을 만나보세요.</p>
+            </div>
+            <div class="video-wrap">
+              <video id="slideVideo1" muted autoplay playsinline loop>
+                <source src="./assets/images/vid-horizontal-01.mp4" type="video/mp4" />
+                Your browser does not support this video tag.
+              </video>
+            </div>
+          </div>
+          <div class="swiper-slide visual-content">
+            <div class="slide-text-wrap">
+              <h2>도심 속에서 즐기는 시원한 바다 속 세상!</h2>
+              <p>매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해 특별한 경험과 잊지 못할 감동을 선사합니다.</p>
+            </div>
+            <video id="slideVideo2" muted autoplay playsinline loop>
+              <source src="./assets/images/vid-horizontal-02.mp4" type="video/mp4" />
+              Your browser does not support this video tag.
+            </video>
+          </div>
+          <div class="swiper-slide visual-content">
+            <div class="slide-text-wrap">
+              <h2>다양한 체험과 공연으로 소중한 추억을!</h2>
+              <p>매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해 특별한 경험과 잊지 못할 감동을 선사합니다.</p>
+            </div>
+            <video id="slideVideo3" muted autoplay playsinline loop>
+              <source src="./assets/images/vid-horizontal-03.mp4" type="video/mp4" />
+              Your browser does not support this video tag.
+            </video>
+          </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination visual-pagination"></div>
         <!-- Add Navigation -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev visual-prev"></div>
+        <div class="swiper-button-next visual-next"></div>
+      </div>
+      <div class="open-hour">
+        <div>
+          <div>
+            <span></span>
+            <span>운영시간</span>
+          </div>
+          <div>
+            <span>평일(월~목)  10:30 ~ 20:00</span>
+            <span>주말(금~일, 공휴일)  10:30 ~ 20:30</span>
+            <span>입장마감  19:00(평일, 주말 동일)</span>
+          </div>
+        </div>
       </div>
     </section>
     <!-- //main visual -->
-
+    
     <!-- content -->
-    <section class="content-01"></section>
+    <section class="section02">
+      <div class="">
+        <div class="title-text-wrap">
+          <h2>아쿠아리움 친구들</h2>
+          <p>
+            동물들이 쾌적한 환경에서 살아갈 수 있도록 만들어 주고, 동물들의 행동을 관찰하는 대구아쿠아리움의
+            아쿠아리스트들이 들려주는 흥미진진한 해양 생물 이야기
+          </p>
+        </div>
+        <div class="card-slide-wrap">
+          <div class="card-slide">
+            <h3></h3>
+            <p></p>
+            <img src="" alt="">
+          </div>
+        </div>
+
+        <div class="scroll-slide">
+          <ul class="card-slide" id="cardSlide">
+            <li class="card-item" id="cardItem">
+              <div class="text-wrap">
+                <h3 class="marine-name">marine-life</h3>
+                <p class="marine-explanation">explanation</p>
+              </div>
+              <img src="./assets/images/marine-life-01-1x.png" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="content-02"></section>
     <section class="content-03"></section>
     <!-- //content -->
@@ -72,5 +143,7 @@
     <!-- footer -->
 
     <!-- //footer -->
+
+
   </body>
 </html>

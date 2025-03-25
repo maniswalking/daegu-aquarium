@@ -1,0 +1,47 @@
+.section01, .main-visual {
+  width: 100%;
+}
+
+.visual-content {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+.visual-content .slide-text-wrap {
+  position: absolute;
+  text-align: center;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+}
+.visual-content .slide-text-wrap h2 {
+  color: var(--color-gray50);
+  font: var(--font-ko-bol-96px);
+  margin-bottom: 2rem;
+}
+.visual-content .slide-text-wrap p {
+  color: var(--color-gray50);
+  font: var(--font-ko-reg-26px);
+}
+
+#slideVideo1 {
+  object-fit: cover;
+} 
+
+
+
+
+/* section02 */
+.section02 .title-text-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.scroll-slide .card-slide {
+  display: flex;
+
+}
+.scroll-slide .card-slide .card-item {
+  width: 30%;
+  height: 40rem;
+  background: var(--color-gray300);
+}
