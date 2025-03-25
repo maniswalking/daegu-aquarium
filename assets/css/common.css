@@ -15,7 +15,7 @@ body {
   --color-blue300: #90c5f7;
   --color-blue400: #5b9ff6;
   --color-blue500: #4288f8;
-  --color-blue600: #2e82ff;
+  --color-blue600: #2e62ff;
   --color-blue700: #2957e3;
   --color-blue800: #0b36bb;
   --color-blue900: #01279b;
@@ -119,15 +119,47 @@ body {
   width: 100%;
   height: 10rem;
   background: var(--color-gray50);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-wrap .logo {
   width: 18rem;
+}
+.gnb {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
 }
 .gnb .menu-wrap {
   display: flex;
   gap: 3.6rem;
 }
 .gnb .menu-wrap .menu-depth-1  {
-  font-size: 1.6rem;
+  font: var(--font-ko-med-16px);
   color: var(--color-gray700);
 }
+.cta {
+  font: var(--font-ko-med-16px);
+  color: var(--color-gray50);
+  background: var(--color-blue600);
+  padding: 0.8rem 1.4rem;
+  border-radius: 1rem;
+}
+.ham-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  display: none;
+}
+.ham-menu .menu-bar {
+  width: 3.6rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background: var(--color-blue900);
+}
+
+@media screen and  {
+  
+}
+
