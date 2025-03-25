@@ -96,6 +96,15 @@ img {
   max-width: 100%;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* root - font family */
 
 /* root - color scheme */
