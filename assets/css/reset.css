@@ -133,6 +133,9 @@ button {
   cursor: pointer;
   padding: 0;
 }
+address {
+  font-style: normal;
+}
 
 input[type='radio'] {
   -webkit-appearance: none; /* 웹킷 브라우저에서 기본 스타일 제거*/
