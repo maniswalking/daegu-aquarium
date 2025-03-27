@@ -9,7 +9,7 @@ $(function () {
   //   document.getElementById("slideVideo1").play();
   // });
 
-
+// 섹션01 - 메인비주얼 슬라이드 swiper
   var swiper = new Swiper(".main-visual", {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -28,9 +28,62 @@ $(function () {
     },
   });
 
-  
+  // 섹션04 - 슬라이드 swiper
+  var slideTotal = $('.portfolio_thumb .swiper-slide').length;
+	var swiper2 = new Swiper('.portfolio_thumb', {
+		slidesPerView: "auto",
+		spaceBetween : 35,
+		speed: 800,
+		loop: false,
+		freeMode: true,
+		allowTouchMove:true,
+		slideToClickedSlide: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+		observer: true,
+		observeParents: true,
+		on: {
+			slideChange : function() {
+				$('.portfolio_thumb .swiper-slide').removeClass('swiper-slide-active');
+			},
+			
+		},
+	});	
+  // 섹션04 - 슬라이드 썸네일 swiper
+  var swiper = new Swiper('.portfolio_gall', {
+    slidesPerView: 1,
+    effect:"fade",
+    fadeEffect: { crossFade: true },
+    freeMode: true,
+    allowTouchMove:true,
+    slideToClickedSlide: true,
+    loop: false,
+    speed: 400,
+    thumbs: {
+        swiper: swiper2,
+    },
+    navigation: {
+        nextEl: '.btn_next',
+        prevEl: '.btn_prev',
+    },
+    pagination: {
+        el: '.portfolioPage',
+        clickable: true,
+    },
+    on: {
+        slideChange: function () {
+            // 메인 슬라이드가 변경될 때 썸네일 갤러리 즉시 이동
+            swiper2.slideTo(this.activeIndex);
+        },
+    },
+  });
+
+///////////////////////////////////////////
 });
 
+
+
+// JavaScript - 메인비주얼 슬라이드 콘텐츠 자동 채우기
 let card_slide = [];
 
 $(window).on('load', function () {

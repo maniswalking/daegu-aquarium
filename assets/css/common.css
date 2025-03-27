@@ -1,8 +1,16 @@
+@charset "utf-8";
+
 /* 공통 CSS */
 body {
   font-family: "pretendard", sans-serif;
   letter-spacing: -0.04rem;
 }
+
+/* 줄바꿈 */
+.pcbr{display:block;}
+.tbbr{display:none;}
+.mbbr{display:none;}
+
 
 /* root */
 :root {
