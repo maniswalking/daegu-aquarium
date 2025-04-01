@@ -1,0 +1,86 @@
+.main .special_sect { position: relative; padding-top: var(--contPd); z-index: 4}
+.main .special_sect .cont_box { margin-top: 16rem; padding: 0 6rem}
+/*.main .special_sect .cont_box .swiper-container*/
+.main .special_sect .cont_box .cont { display: block; overflow: hidden; position: relative; flex: 1; border-radius: 2rem; transform: translateY(150px); opacity: 0; transition-property: transform , opacity; transition-duration: 0.8s ; }
+.main .special_sect .cont_box .cont:nth-child(2) {transition-delay: 0.1s}
+.main .special_sect .cont_box .cont:nth-child(3) {transition-delay: 0.2s}
+.main .special_sect .cont_box .cont:nth-child(4) {transition-delay: 0.3s}
+.main .special_sect .cont_box .cont:nth-child(4) {transition-delay: 0.4s}
+.main .special_sect .cont_box .cont:nth-child(5) {transition-delay: 0.5s}
+.main .special_sect .cont_box .cont + .cont {margin-left: 3rem}
+.main .special_sect .cont_box .cont .img {padding-top: 133%;}
+.main .special_sect .cont_box .cont .img img {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%; height: 100%; object-fit: cover; object-position: center; filter: blur(0px); transition: filter 0.3s ease-in-out}
+.main .special_sect .cont_box .cont .hover_box {content: "";  display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top:0; width: 100%; height: 100%; color: #fff;
+    /*background-color: rgba(0,129,108,0.45);*/ background-color: rgba(0,0,0,0.4); z-index: 2; opacity: 0; transition: opacity 0.3s ease-in-out;}
+.main .special_sect .cont_box .cont .hover_box svg {display: none; width: 6rem; fill: #fff; transition: transform 0.3s ease-in-out}
+.main .special_sect .cont_box .cont .txt_box {position: absolute; left: 0; bottom: 0; transform: translateY(calc(100% + -17rem)); width: 100%; padding: 3.5rem; color: #fff; z-index: 3; transition: transform 0.5s;}
+.main .special_sect .cont_box .cont .txt_box .tit{font-size: var(--main_ti1); font-weight: 700}
+.main .special_sect .cont_box .cont .txt_box .en {margin-bottom: 1em; font-family: "Outfit", sans-serif; font-size: calc(var(--smTxt) * 0.8); font-weight: 500; text-transform: uppercase}
+.main .special_sect .cont_box .cont .txt_box .txt{ margin-top: 3em;}
+
+.main .special_sect .cont_box.active .cont {transform: translateY(0); opacity: 1; }
+
+/* hover 스타일 */
+@media screen and (min-width: 1024px) {
+  .main .special_sect .cont_box .cont:hover .img img {filter: blur(10px)}
+  .main .special_sect .cont_box .cont:hover .hover_box {opacity: 1}
+  .main .special_sect .cont_box .cont:hover .hover_box svg {transform: rotate(180deg)}
+  .main .special_sect .cont_box .cont:hover .txt_box{transform: translateY(0);}
+}
+@media screen and (max-width: 1641px){
+  .main .special_sect {overflow: hidden}
+  .main .special_sect .cont_box { width: 100%; padding:0  0 50px;}
+  .main .special_sect .cont_box .swiper-container {padding:0 var(--inPd)}
+  /*.main .special_sect .cont_box::-webkit-scrollbar { display: none; }*/
+  .main .special_sect .cont_box .cont{}
+  .main .special_sect .cont_box .cont + .cont { margin-left: 2rem; }
+  .main .special_sect .cont_box .cont .txt_box { padding: 2.5rem; }
+  .main .special_sect .cont_box .cont .txt_box{transform: translateY(calc(100% + -13rem));}
+  .main .special_sect .cont_box .cont .txt_box .txt{margin-top: 2em;}
+
+  .main .special_sect .swiper-pagination-progressbar {bottom: 0; left: 50%; width: 50rem; height: 2px; transform: translateX(-50%)}
+  .main .special_sect .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {background: var(--green)}
+}
+
+@media screen and (max-width: 1241px){
+
+  :root {
+      --bigTxt: 18px;
+      --txt: 15px;
+      --smTxt: 13px;
+      --thinTxt: 11px;
+      --contPd: 20rem;
+  }
+
+  .main .special_sect .cont_box {margin-top: 8rem}
+  .main .special_sect .cont_box .cont + .cont {margin-left: 15px}
+  .main .special_sect .cont_box .cont .txt_box { padding: 1.5rem; font-size: var(--bigTxt)}
+  .main .special_sect .cont_box .cont .txt_box .en { font-size: 10px; }
+}
+
+
+@media screen and (max-width: 769px){
+
+  :root {
+      --inPd: 20px;
+
+      --bigTxt: 16px;
+      --contPd: 12rem;
+
+      --main_ti1: 18px;
+      --txt: 14px;
+      --smTxt: 11px;
+      --thinTxt: 11px;
+  }
+
+  .main .special_sect .cont_box .cont .txt_box .en { margin-bottom: 0.3em; }
+  .main .special_sect .cont_box .cont .txt_box { transform: translateY(calc(100% + -8.5rem)); }
+  .main .special_sect .cont_box {padding-bottom: 30px}
+  .main .special_sect .swiper-pagination-progressbar {width: 30rem}
+
+
+  .main .special_sect .cont_box { width: 100%; overflow: auto; }
+  .main .special_sect .cont_box::-webkit-scrollbar { display: none; }
+  .main .special_sect .cont_box .cont { transform: translateY(0); }
+}
+
