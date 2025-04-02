@@ -7,8 +7,8 @@ body {
 }
 
 /* 줄바꿈 */
-.pcbr{display:block;}
-.tbbr{display:none;}
+.pcbr{display:none;}
+.tbbr{display:block;}
 .mbbr{display:none;}
 
 
@@ -134,7 +134,7 @@ body {
 .container {
   max-width: 160rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem !important;
 }
 
 
@@ -223,9 +223,10 @@ body {
 
 .footer-wrap {
   width: 100%;
-  height: 27rem;
+  height: auto;
   background: #152C72;
   padding: 4.5rem 0;
+  position: relative;
 }
 .footer-cont {
   display: flex;
@@ -269,6 +270,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 22rem;
 }
 .footer-right .family-site {
   font: var(--font-en-med-16px);
@@ -287,4 +289,53 @@ body {
 .footer-right .sns .sns-list {
   display: flex;
   gap: 2rem;
+}
+
+/* 푸터 미디어쿼리 */
+
+/* desktop */
+@media screen and (max-width: 1024px) {
+  .pcbr {display: block;}
+  .footer-left .addr address span {display: inline-block;}
+  .footer-left .addr address span:not(:first-child) {
+    margin-top: 1rem;
+  }
+  .footer-left .addr address span:not(:first-child)::before {
+    display: none;
+  }
+}
+/* mobile */
+@media screen and (max-width: 600px) {
+  .footer-cont {
+    flex-direction: column;
+  }
+  .footer-left .copy {
+    position: absolute;
+    left: 2rem;
+    bottom: 4.5rem;
+  }
+  .footer-right {
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+/* desktop */
+@media screen and (max-width: px) {
+  
+}
+/* desktop */
+@media screen and (max-width: px) {
+  
+}
+/* desktop */
+@media screen and (max-width: px) {
+  
+}
+/* desktop */
+@media screen and (max-width: px) {
+  
+}
+/* desktop */
+@media screen and (max-width: px) {
+  
 }

@@ -84,13 +84,15 @@
                 특별한 경험과 잊지 못할 감동을 선사합니다.
               </p>
             </div>
-            <video id="slideVideo2" muted autoplay playsinline loop>
-              <source
-                src="./assets/images/vid-horizontal-01.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support this video tag.
-            </video>
+            <div class="video-wrap">
+              <video id="slideVideo2" muted autoplay playsinline loop>
+                <source
+                  src="./assets/images/vid-horizontal-01.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support this video tag.
+              </video>
+            </div>
           </div>
           <div class="swiper-slide visual-content">
             <div class="slide-text-wrap">
@@ -100,13 +102,15 @@
                 특별한 경험과 잊지 못할 감동을 선사합니다.
               </p>
             </div>
-            <video id="slideVideo3" muted autoplay playsinline loop>
-              <source
-                src="./assets/images/vid-horizontal-03.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support this video tag.
-            </video>
+            <div class="video-wrap">
+              <video id="slideVideo3" muted autoplay playsinline loop>
+                <source
+                  src="./assets/images/vid-horizontal-03.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support this video tag.
+              </video>
+            </div>
           </div>
         </div>
         <!-- Add Pagination -->
@@ -122,15 +126,15 @@
             <span class="op-hours">운영시간</span>
           </div>
           <div class="hours">
-            <span class="weekday"
-              ><span class="bold">평일</span>(월~목) 10:30 ~ 20:00</span
-            >
-            <span class="weekend"
-              ><span class="bold">주말</span>(금~일, 공휴일) 10:30 ~ 20:30</span
-            >
-            <span class="last-enter"
-              ><span class="bold">입장마감</span> 19:00(평일, 주말 동일)</span
-            >
+            <span class="weekday">
+              <span class="margin"><b>평일</b>(월~목)</span><br class="pcbr">10:30 ~ 20:00
+            </span>
+            <span class="weekend">
+              <span class="margin"><b>주말</b>(금~일, 공휴일)</span><br class="pcbr">10:30 ~ 20:30
+            </span>
+            <span class="last-enter">
+              <span class="margin"><b>입장마감</b>(평일, 주말 동일)</span><br class="pcbr">19:00
+            </span>
           </div>
         </div>
       </div>
@@ -139,39 +143,6 @@
 
     <!-- content -->
     <!-- 섹션02 -->
-    <!-- <section class="section02">
-      <div class="section02-wrap">
-        <div class="title-text-wrap">
-          <h2 class="section-title">아쿠아리움 친구들</h2>
-          <p class="section-content">
-            동물들이 쾌적한 환경에서 살아갈 수 있도록 만들어 주고, 동물들의
-            행동을 관찰하는 대구아쿠아리움의 아쿠아리스트들이 들려주는
-            흥미진진한 해양 생물 이야기
-          </p>
-        </div>
-        <div class="card-slide-wrap">
-          <div class="card-slide">
-            <h3></h3>
-            <p></p>
-            <img src="" alt="" />
-          </div>
-        </div>
-
-        <div class="scroll-slide">
-          <ul class="card-slide" id="cardSlide">
-            <li class="card-item" id="cardItem">
-              <div class="text-wrap">
-                <h3 class="marine-name">marine-life</h3>
-                <p class="marine-explanation">explanation</p>
-              </div>
-              <div class="slide-bg">
-                <img src="./assets/images/marine-life-01-1x.png" alt="" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
     <section class="section02">
       <div class="section02-wrap">
         <div class="title-text-wrap">
@@ -183,55 +154,178 @@
           </p>
         </div>
         <div class="swiper container sec02-slide">
-          <div class="swiper-wrapper card-slide" id="cardSlide">
-            <div class="swiper-slide card-item" id="cardItem">
-              <a href="#none" class="cont">
+          <div class="swiper-wrapper card-slide">
+            <div class="swiper-slide card-item">
+              <div class="cont">
                 <div class="slide-bg">
-                  <img src="./assets/images/marine-life-01-1x.png" alt="" />
+                  <img src="./assets/images/marine-life-01-1x.png" alt="흑기흉상어" />
                 </div>
-                <div class="text-wrap">
-                  <h3 class="marine-name"></h3>
-                  <p class="marine-spicies">
-                    <span class="marine-txt01"></span><br>
-                    <span class="marine-txt02"></span>
+                <div class="text-box">
+                  <h3 class="tit">흑기흉상어</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Carcharhinus melanopterus</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 연골어강 > 흉상어목 > 흉상어과</span>
                   </p>
-                  <p class="marine-exp">
-                    <span class="marine-txt03"></span><br>
-                    <span class="marine-txt04"></span>
+                  <p class="exp">
+                    <span class="esp-txt">빠밤~ 빠밤~ 빠밤 빠밤 빠밤~~~!!! 상어다~~</span><br>
+                    <span class="esp-txt">지느러미 무늬 끝부분이 검정색으로 되어 있어요.</span>
                   </p>
                 </div>
-              </a>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-02-1x.png" alt="흰동가리" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">흰동가리</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Amphiprion ocellaris</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 경골어류 > 농어목 > 자리돔과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">애니메이션에 등장해 유명해진 흰동가리!</span><br>
+                    <span class="esp-txt">말미잘과 공생하는 물고기랍니다.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-03-1x.png" alt="가든일" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">가든일</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Heteroconger hassi</span><br>
+                    <span class="cate-txt">분류 : 척색동물문 > 조기아강 > 뱀장어목 > 붕장어과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">겁이많아 숨기 좋아하는 가든일!</span><br>
+                    <span class="esp-txt">먹이를 먹을 때 조차 구멍을 절대 벗어나질 않아요.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-04-1x.png" alt="매너티" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">매너티</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Trichechus senegalensis</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 포유류 > 바다소목 > 매너티과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">하루 20kg의 먹이를 먹는 먹보 인어 매너티!</span><br>
+                    <span class="esp-txt">매너티는 야채를 좋아한답니다.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-05-1x.png" alt="지브라상어" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">지브라상어</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Stegostoma fasciatum</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 연골어류 > 수염상어목 > 제브라상어과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">어릴 때와 어른일 때의 모습이 달라요.</span><br>
+                    <span class="esp-txt">보기와 달리 온순한 성격을 가지고 있답니다.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-06-1x.png" alt="피라냐" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">피라냐</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Pygocentrus nattereri</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 경골어류 > 잉어목 > 카라신과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">날카로운 이빨이 특징인 피라냐!</span><br>
+                    <span class="esp-txt">아마존 원주민 말로 ‘이빨 있는 물고기’라는 뜻이래요.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-07-1x.png" alt="아로와나" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">아로와나</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Osteoglossum bicirrhosum</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 조기어류 > 골설어목 > 골설어류과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">아마존의 은빛 거구 아로와나!</span><br>
+                    <span class="esp-txt">아로와나는 크기가 1m 이상 자란답니다.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-08-1x.png" alt="훔볼트펭귄" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">훔볼트펭귄</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Spheniscus humboldti</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 조류 > 펭귄목 > 펭귄과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">페루에서 온 신사 훔볼트펭귄!</span><br>
+                    <span class="esp-txt">남극이 아니라 남아메리카 서해안에서 주로 분포해요</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="cont">
+                <div class="slide-bg">
+                  <img src="./assets/images/marine-life-09-1x.png" alt="캘리포니아 바다사자" />
+                </div>
+                <div class="text-box">
+                  <h3 class="tit">캘리포니아 바다사자</h3>
+                  <p class="cate">
+                    <span class="cate-txt">학명 : Zalophus californianus</span><br>
+                    <span class="cate-txt">분류 : 척삭동물 > 포유류 > 기각목 > 바다사자과</span>
+                  </p>
+                  <p class="exp">
+                    <span class="esp-txt">호기심이 많고 큰 눈을 가진 캘리포니아 바다사자!</span><br>
+                    <span class="esp-txt">수염으로 수중에서 먹잇감의 위치를 정확히 파악해요.</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="swiper-pagination sec02-pagination"></div>
-          <!-- <div class="swiper-button-prev sec02-prev"></div>
-          <div class="swiper-button-next sec02-next"></div> -->
-        </div>
+          <div class="swiper-pagination sec02-pagination">
 
-        <!-- <div class="card-slide-wrap">
-          <div class="card-slide">
-            <h3></h3>
-            <p></p>
-            <img src="" alt="" />
           </div>
-        </div> -->
-
-        <!-- <div class="scroll-slide">
-          <ul class="card-slide" id="cardSlide">
-            <li class="card-item" id="cardItem">
-              <div class="slide-bg">
-                <img src="./assets/images/marine-life-01-1x.png" alt="" />
-              </div>
-              <div class="text-wrap">
-                <h3 class="marine-name">marine-life</h3>
-                <p class="marine-explanation">explanation</p>
-              </div>
-              
-            </li>
-          </ul>
-        </div> -->
+        </div>
       </div>
     </section>
+    
+    <!-- 섹션03 -->
     <section class="section03">
       <div class="section03-wrap">
         <div class="sec03-title-wrap">
@@ -257,6 +351,8 @@
         </div>
       </div>
     </section>
+
+    <!-- 섹션04 -->
     <section class="section04">
       <div class="section04-wrap">
         <h2 class="section-title">아쿠아리움의 프로그램</h2>
@@ -377,7 +473,7 @@
                     <div>
                       <div class="tit">라디오 펭스타!</div>
                       <div class="exp">
-                        아쿠아리스트가 소개하는 펭귄의 특징들과 POP QUIZ까지!
+                        먹이 먹는 펭귄 모습과 아쿠아리스트가 소개하는 펭귄의 특징들과 POP QUIZ까지!
                       </div>
                       <div class="btn-wrap">
                         <div class="btn">
@@ -552,9 +648,10 @@
                 <span>대구아쿠아리움</span><span>대표이사: 김태훈</span>
               </address>
               <address>
-                <span>(주)아쿠아월드</span> <span>대구광역시 동구 동부로 149</span
-                ><span>사업자등록번호 : 256-81-00015</span
-                ><span> Tel : 053.247.8899</span>
+                <span>(주)아쿠아월드</span><br class="pcbr">
+                <span>대구광역시 동구 동부로 149</span><br class="pcbr">
+                <span>사업자등록번호 : 256-81-00015</span><br class="pcbr">
+                <span> Tel : 053.247.8899</span>
               </address>
             </div>
             <small class="copy">Copyright (c) daeguaquarium All Right Reserved</small>
