@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style-main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/ico_favicon.svg">
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -19,33 +20,231 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
     <script src="./assets/js/main.js"></script>
   </head>
   <body>
     <!-- header -->
-    <header class="header">
-      <div class="header-wrap container">
+    <header class="header on" id="header">
+      <div class="header_wrap container">
         <h1 class="logo">
           <a href="index.html">
             <img src="./assets/images/logo.svg" alt="대구아쿠아리움 로고" />
           </a>
         </h1>
-        <div class="nav-wrap">
-          <nav class="gnb">
-            <ul class="menu-wrap">
-              <li class="menu-depth-1"><a href="#">대구아쿠아리움</a></li>
-              <li class="menu-depth-1"><a href="#">아쿠아리움 이야기</a></li>
-              <li class="menu-depth-1"><a href="#">공연·체험</a></li>
-              <li class="menu-depth-1"><a href="#">아쿠아리움 입장권</a></li>
+        <div class="gnb_wrap">
+          <nav class="gnb_inner">
+            <ul class="list" id="gnb">
+              <li class="depth01">
+                <a href="#">
+                  <span>대구아쿠아리움</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="./sub1.html">
+                          <span>대구아쿠아리움 소개</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>공지사항</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>관람안내</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>자주 묻는 질문</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="depth01">
+                <a href="#">
+                  <span>아쿠아리움 이야기</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>아쿠아입주민이야기</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="./sub2.html">
+                          <span>아쿠아리움친구들</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="depth01">
+                <a href="#">
+                  <span>공연·체험</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="./sub3.html">
+                          <span>공연안내</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>프로그램</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="depth01">
+                <a href="#">
+                  <span>입장권 안내</span>
+                </a>
+                <div class="snb_wrap">
+                  <div class="text_list">
+                    <ul>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>입장권 및 프로모션</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="#none">
+                          <span>단체 입장권</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
+            <div class="depth2_bg"></div>
             <div class="cta">
-              <a href="#none">티켓예매하기</a>
+              <a href="./sub4.html">티켓예매하기</a>
             </div>
           </nav>
           <div class="ham-menu">
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
+              <span class="menu-bar"></span>
+              <span class="menu-bar"></span>
+              <span class="menu-bar"></span>
+          </div>
+          <div class="mo_gnb_inner">
+            <ul class="mo_list" id="gnbMobile">
+              <li class="mo_depth01">
+                <a href="#">
+                  <span>대구아쿠아리움</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="./sub1.html">
+                          <span>대구아쿠아리움 소개</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>공지사항</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>관람안내</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>자주 묻는 질문</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mo_depth01">
+                <a href="#">
+                  <span>아쿠아리움 이야기</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>아쿠아입주민이야기</span>
+                        </a>
+                      </li>
+                      <li class="depth02">
+                        <a href="./sub2.html">
+                          <span>아쿠아리움친구들</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mo_depth01">
+                <a href="#">
+                  <span>공연·체험</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="./sub3.html">
+                          <span>공연안내</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>프로그램</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="mo_depth01">
+                <a href="#">
+                  <span>입장권 안내</span>
+                </a>
+                <button class="depth_btn" type="button"></button>
+                <div class="mo_snb_wrap">
+                  <div class="mo_text_list">
+                    <ul>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>입장권 및 프로모션</span>
+                        </a>
+                      </li>
+                      <li class="mo_depth02">
+                        <a href="#none">
+                          <span>단체 입장권</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="mo_depth2_bg"></div>
+            <div class="mo_cta">
+              <a href="./sub4.html">티켓예매하기</a>
+            </div>
           </div>
         </div>
       </div>
@@ -61,8 +260,7 @@
             <div class="slide-text-wrap">
               <h2>대구아쿠아리움</h2>
               <p>
-                매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해
-                특별한 경험과 잊지 못할 감동을 선사합니다. 판타스틱하고 환상적인
+                매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여 그리고 교감을 통해 판타스틱하고 환상적인
                 체험들을 선사하는 펀(Fun)한 대구아쿠아리움을 만나보세요.
               </p>
             </div>
@@ -78,7 +276,7 @@
           </div>
           <div class="swiper-slide visual-content">
             <div class="slide-text-wrap">
-              <h2>도심 속에서 즐기는 시원한 바다 속 세상!</h2>
+              <h2>도심 속에서 즐기는<br class="pcbr"> 시원한 바다 속 세상!</h2>
               <p>
                 매일 매일 색다른 즐거움이 펼쳐지며, 체험과 참여, 교감을 통해
                 특별한 경험과 잊지 못할 감동을 선사합니다.
@@ -133,7 +331,7 @@
               <span class="margin"><b>주말</b>(금~일, 공휴일)</span><br class="pcbr">10:30 ~ 20:30
             </span>
             <span class="last-enter">
-              <span class="margin"><b>입장마감</b>(평일, 주말 동일)</span><br class="pcbr">19:00
+              <span class="margin"><b>입장마감</b></span><br class="pcbr">19:00(평일, 주말 동일)
             </span>
           </div>
         </div>

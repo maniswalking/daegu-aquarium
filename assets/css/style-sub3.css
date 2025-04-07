@@ -1,0 +1,216 @@
+    /* 메인이미지 */
+  .main_img {
+    position: relative;
+  }
+  .main_img img {
+    width: 100%;
+    height: 670px;
+    object-fit: cover;
+  }
+  main .main_txt {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: var(--font-ko-reg-18px);
+    color: #fff;
+    text-align: center;
+    /* background-color: #01279b; */
+    padding: 0 20px;
+    
+  }
+  main .main_txt h2 {
+    margin-bottom: 30px;
+    font: var(--font-en-bol-88px);
+  }
+  main .main_txt p {
+    font: var(--font-ko-reg-22px);
+    line-height: 30px;
+  }
+  @media (max-width: 1350px) {
+    main .main_txt h2 {
+      font: var(--font-ko-bol-46px);
+    }
+    main .main_txt p {
+      font: var(--font-ko-reg-18px);
+    }
+    .main_img img {
+      height: 500px;
+    }
+  }
+  @media (max-width: 600px) {
+    main .main_txt h2 {
+      font: var(--font-ko-bol-32px);
+    }
+    main .main_txt p {
+      font: var(--font-ko-reg-16px);
+    }
+    main .main_txt {
+      padding: 0 20px;
+    }
+  }
+  /* //메인이미지 */
+
+  /* 컨테이너 네비  */
+  .sub3_container {
+    max-width: 1600px;
+    margin: 0 auto;
+  
+  }
+  .sub3_container_title {
+    max-width: 1600px;
+    padding: 0 20px;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .sub3_container_title .container_bar {
+    width: 1px;
+    height: 20px;
+    background-color: #AEAEB2
+  }
+  .list_bar {
+    position: relative;
+    left: -204px;
+    bottom: -15px;
+    display: none;
+  }
+  .list_bar ul {
+    width: 160px;
+    background-color: var(--color-gray100);
+    /* border-radius: 10px; */
+    position: absolute;
+    
+    font: var(--font-ko-med-14px);
+    color: var(--color-gray400);
+    font-weight: 400;
+  }
+  .list_bar ul li {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #b6b6b6;
+    padding-left: 10px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .list_bar ul li:hover {
+    background-color: var(--color-blue200);
+    color: #fff;
+  }
+  .list_bar ul li:last-child {
+    border: 0;
+  }
+  .sortdown {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .sortdown:hover {
+     transform: rotate(180deg);
+  }
+  
+  @media (max-width: 450px) {
+    .sub3_container_title {
+      gap: 15px;
+    }
+    
+  }
+  /* 섹션 */
+  /* 수중공연 */
+  section {
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 20px;
+    /* background-color: aqua; */
+  }
+  
+  .section_title_wrap {
+    margin-bottom: 80px;
+  }
+  .section_title {
+    font: var(--font-ko-bol-46px);
+  }
+  .section_txt {
+    font:  var(--font-ko-reg-16px);
+    margin-top: 10px;
+  }
+  .sec1_img_wrap {
+    display: flex;
+    gap: 30px;
+  }
+  /* 체험프로그램 */
+  .sec2_img_wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+  }
+  .sec2_img_wrap .img_wrap {
+    
+    
+    /* background-color: aquamarine; */
+    margin-bottom: 80px;
+    flex: 1 1 400px;
+    min-width: 300px;
+    
+  }
+  
+  .img_title {
+    font: var(--font-ko-bol-26px);
+    margin-top: 20px;
+  }
+  .img_txt {
+    font: var(--font-ko-reg-16px);
+    margin-top: 10px;
+  }
+  @media (max-width: 1315px) {
+    .sec2_img_wrap {
+      justify-content: center;
+      gap: 50px;
+      
+    }
+    .sec2_img_wrap .img_wrap {
+      /* background-color: aquamarine; */
+      margin-bottom: 40px;
+      flex: 1 1 400px;
+      max-width: 500px;
+      min-width: 200px;
+      
+    }
+  }
+  /* 아쿠아리움탐험 */
+  .section3_title {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 904px) {
+    section {
+      margin: 60px 0;
+    }
+    .section_title_wrap {
+      margin-bottom: 40px;
+    }
+    .sec1_img_wrap {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .section_title {
+      font: var(--font-ko-bol-32px);
+    }
+    .section_title_wrap {
+      text-align: center;
+    }
+    .img_title {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .sec1_img_wrap {
+      gap: 45px;
+    }
+  }
