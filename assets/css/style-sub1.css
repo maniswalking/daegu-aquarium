@@ -86,18 +86,18 @@ main .main_txt p {
 }
 .list_bar ul {
   width: 160px;
-  background-color: var(--color-gray100);
+  background-color: var(--color-gray80);
   /* border-radius: 10px; */
   position: absolute;
 
   font: var(--font-ko-med-14px);
-  color: var(--color-gray400);
+  color: var(--color-gray500);
   font-weight: 400;
 }
 .list_bar ul li {
   width: 100%;
   height: 40px;
-  border-bottom: 1px solid #b6b6b6;
+  border-bottom: 1px solid var(--color-gray200);
   padding-left: 10px;
   line-height: 40px;
   cursor: pointer;
@@ -114,7 +114,7 @@ main .main_txt p {
   transition: 0.5s ease-in-out;
 }
 .sortdown:hover {
-   transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media (max-width: 600px) {
@@ -229,6 +229,31 @@ main .main_txt p {
   }
 }  
 
+/* 프로그레스 바 */
+.swiper-pagination-wrap .swiper-pagination {
+  background: var(--color-gray400);
+}
+.swiper-pagination-wrap .swiper-pagination-progressbar {
+  left: 50%;
+  width: 50rem;
+  height: 0.2rem;
+  transform: translateX(-50%);
+  background: var(--color-gray200);
+  /* border-radius: 0.3rem !important; */
+  top: unset;
+  bottom: -5rem !important;
+  overflow: hidden;
+}
+.swiper-pagination-wrap .swiper-pagination-progressbar-fill {
+  background: var(--color-blue600);
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-pagination-wrap .swiper-pagination-progressbar {
+    width: 30rem;
+  }
+}
+
 
 /* 마퀴 */
 
@@ -259,7 +284,7 @@ main .main_txt p {
 
 @media (max-width: 500px) {
   .marquee-container {
-    margin-top: 80px;
+    margin-top: 110px;
   }
 }
 /* 콘텐츠(로고설명) */

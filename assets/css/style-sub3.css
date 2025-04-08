@@ -82,18 +82,18 @@
   }
   .list_bar ul {
     width: 160px;
-    background-color: var(--color-gray100);
+    background-color: var(--color-gray80);
     /* border-radius: 10px; */
     position: absolute;
     
     font: var(--font-ko-med-14px);
-    color: var(--color-gray400);
+    color: var(--color-gray500);
     font-weight: 400;
   }
   .list_bar ul li {
     width: 100%;
     height: 40px;
-    border-bottom: 1px solid #b6b6b6;
+    border-bottom: 1px solid var(--color-gray200);
     padding-left: 10px;
     line-height: 40px;
     cursor: pointer;
@@ -120,97 +120,152 @@
     
   }
   /* 섹션 */
-  /* 수중공연 */
-  section {
-    width: 100%;
-    margin: 100px 0;
-    padding: 0 20px;
-    /* background-color: aqua; */
-  }
+
   
-  .section_title_wrap {
-    margin-bottom: 80px;
+.section-wrap {
+  margin-top: 8rem;
+}
+@media screen and (max-width: 1024px) {
+  .section-wrap {
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-wrap {
+    margin-top: 4rem;
+  }
+}
+
+
+.container {
+  max-width: 1600px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.cont-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+.cont {
+  max-width: 100%;
+  flex-grow: 1;
+}
+.cont .img-wrap {
+  width: 100%;
+}
+
+.cont .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* @media screen and (min-width: 1281px) {
+  .cont {
+    max-width: calc(100% / 3);
+  }
+} */
+/* @media screen and (max-width: 1560px) {
+  .cont {
+    max-width: calc(100% / 3);
+  }
+} */
+@media screen and (min-width: 1280px) {
+  .cont {
+    width: calc(100% / 4);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .cont {
+    width: calc(100% / 4);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cont {
+    width: calc(100% / 3);
+  }
+  .cont:last-child {
+    width: 49%;
+    flex-grow: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cont {
+    width: calc(100% / 2);
+    flex-grow: 1 !important;
+  }
+  .text-wrap {
+    text-align: center;
+    align-items: center;
   }
   .section_title {
-    font: var(--font-ko-bol-46px);
+    text-align: center;
   }
-  .section_txt {
-    font:  var(--font-ko-reg-16px);
-    margin-top: 10px;
-  }
-  .sec1_img_wrap {
-    display: flex;
-    gap: 30px;
-  }
-  /* 체험프로그램 */
-  .sec2_img_wrap {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-  }
-  .sec2_img_wrap .img_wrap {
-    
-    
-    /* background-color: aquamarine; */
-    margin-bottom: 80px;
-    flex: 1 1 400px;
-    min-width: 300px;
-    
-  }
+}
+
+.text-wrap {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.text-wrap .text-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.text-wrap .text-main .tit {
+  font-size: 24px;
+  font-weight: 700;
+}
+.text-wrap .text-main .tit_btn {
+  display: block;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--color-gray80);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px;
+  font-size: 15px;
+  color: var(--color-gray800);
+  font-weight: 500;
+}
+.text-wrap .text-main .tit_btn:hover {
+  background-color: #BFECFF;
+}
+
+.text-wrap .text-main .tit_btn::after {
+  content: url(../images/sub2_icon_1.svg);
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 95px;
+}
+.text-wrap .text-sub {
+  font: var(--font-ko-reg-16px);
+}
+
+
+.section_title {
+  margin-bottom: 40px;
+}
+.section_title h3 {
+  font: var(--font-ko-bol-32px);
+  margin-bottom: 20px;
+}
+.section_title p {
+  font: var(--font-ko-reg-16px);
+}
+
+
+.section03 {
+  margin-bottom: 80px;
+}
   
-  .img_title {
-    font: var(--font-ko-bol-26px);
-    margin-top: 20px;
-  }
-  .img_txt {
-    font: var(--font-ko-reg-16px);
-    margin-top: 10px;
-  }
-  @media (max-width: 1315px) {
-    .sec2_img_wrap {
-      justify-content: center;
-      gap: 50px;
-      
-    }
-    .sec2_img_wrap .img_wrap {
-      /* background-color: aquamarine; */
-      margin-bottom: 40px;
-      flex: 1 1 400px;
-      max-width: 500px;
-      min-width: 200px;
-      
-    }
-  }
-  /* 아쿠아리움탐험 */
-  .section3_title {
-    margin-bottom: 80px;
-  }
-  @media (max-width: 904px) {
-    section {
-      margin: 60px 0;
-    }
-    .section_title_wrap {
-      margin-bottom: 40px;
-    }
-    .sec1_img_wrap {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .section_title {
-      font: var(--font-ko-bol-32px);
-    }
-    .section_title_wrap {
-      text-align: center;
-    }
-    .img_title {
-      font-size: 22px;
-      font-weight: 700;
-      text-align: center;
-    }
-    .sec1_img_wrap {
-      gap: 45px;
-    }
-  }
+  

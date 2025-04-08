@@ -340,12 +340,12 @@
 }
 .sec02-slide .cont .text-box p.cate {
   margin-top: 3rem;
-  font-size: 1.3rem;
+  font: var(--font-ko-reg-15px);
   line-height: 1.8;
 }
 .sec02-slide .cont .text-box p.exp {
   margin-top: 2rem;
-  font: var(--font-ko-reg-16px);
+  font: var(--font-ko-reg-18px);
   line-height: 160%;
 }
 
@@ -359,7 +359,7 @@
   height: 0.2rem;
   transform: translateX(-50%);
   background: var(--color-gray200);
-  border-radius: 0.3rem !important;
+  /* border-radius: 0.3rem !important; */
   top: unset;
   bottom: -4rem !important;
   overflow: hidden;
